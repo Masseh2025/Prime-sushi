@@ -1,0 +1,118 @@
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  max-width: 1200px;
+  width: 100%;
+  height: max-content;
+  padding: 4rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.food-container {
+  display: grid;
+  max-width: 600px;
+  width: 100%;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.food {
+  display: flex;
+  max-width: 300px;
+  height: 300px;
+  flex-direction: column;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+.food__image {
+  height: 80%;
+  background: url(/images/salad.jpeg);
+  background-size: cover;
+}
+
+.food__text {
+  height: 20%;
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.food__name {
+  background-color: var(--orange-transparent);
+  padding: 0.5em 1em;
+  border-radius: 12px;
+}
+
+/* different food types */
+
+.food__sushi--salmon {
+  background: url(/images/sushi\ salmon.jpeg);
+  background-size: cover;
+}
+
+.food__sushi--tuna {
+  background: url(/images/Sushi\ tuna.jpeg);
+  background-size: cover;
+}
+
+.food__sushi--california {
+  background: url(/images/Sushi\ california.jpeg);
+  background-size: cover;
+}
+
+.food__drink--coke {
+  background: url(/images/coke.jpeg);
+  background-size: cover;
+}
+
+.food__drink--water {
+  background: url(/images/water.jpeg);
+  background-size: cover;
+}
+
+.food__drink--tea {
+  background: url(/images/tea.jpeg);
+  background-size: cover;
+}
+
+/* menu */
+
+.menu {
+  max-width: 600px;
+  width: 100%;
+  margin-left: 1rem;
+}
+
+.menu__heading {
+  font-size: 2rem;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  background-color: var(--orange-transparent);
+  padding: 0.5em 1em;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.menu__categories {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menu__categorie {
+  padding: 0.5em 1em;
+  background: var(--orange-transparent);
+  border-radius: 12px;
+}
+
+.menu__categorie:hover {
+  background: var(--orange);
+  color: var(--white);
+  cursor: pointer;
+}
