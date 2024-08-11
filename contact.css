@@ -1,0 +1,50 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__main {
+  height: fit-content;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  width: 100%;
+  padding: 4rem 0;
+}
+
+.contact__header {
+  font-size: 3rem;
+  font-family: "Merriweather", serif;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#name,
+#email,
+#response {
+  width: 100%;
+}
+
+#response {
+  resize: none;
+  height: auto;
+}
+
+@media (max-width: 900px) {
+  .contact__header {
+    font-size: 2rem;
+  }
+}
+
+/* success page */
+
+.success__header {
+  font-size: 3rem;
+  font-family: "Merriweather", serif;
+  text-align: center;
+  margin-bottom: 1rem;
+}

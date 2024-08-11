@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="contact.css" />
     <script src="navbar.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -58,7 +59,30 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main class="main" class="contact__main">
+      <div class="content">
+        <h2 class="contact__header">
+          Interested in Catering or wanna contact us? please fill this out!
+        </h2>
+        <form action="/contact-success.html" id="form">
+          <div>
+            <label for="">Name</label>
+          </div>
+          <input type="text" name="name" id="name" required />
+          <div>
+            <label for="">Email</label>
+          </div>
+          <input type="email" name="email" id="email" required />
+          <div>
+            <label for="response">Response</label>
+            <textarea name="response" id="response"></textarea>
+            <div>
+              <button type="submit" name="submit" id="submit">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
     <footer class="footer">© 2024 PrimeSushi. All rights reserved.</footer>
   </body>
 </html>
